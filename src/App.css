@@ -1,3 +1,6 @@
+:root {
+  --brand-gradient: linear-gradient(90deg, #FF5722 0%, #D81B7E 50%, #7C3AED 100%);
+}
 .counter {
   font-size: 16px;
   padding: 5px 10px;

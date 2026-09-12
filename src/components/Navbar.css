@@ -63,6 +63,7 @@
 }
 
 .btn-signup {
+  background: var(--brand-gradient);
   padding: 0.6rem 1.5rem;
   border-radius: 9999px;
   font-weight: 600;
