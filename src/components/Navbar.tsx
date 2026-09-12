@@ -8,7 +8,7 @@ function Navbar() {
     <header className="navbar-header">
       <div className="container navbar-container">
         
-        {/* Desktop View */}
+      
         <div className="navbar-desktop">
           <div className="navbar-brand">
             <img src="/logo-text.png" alt="Dev Stack" className="brand-logo" />
@@ -34,7 +34,11 @@ function Navbar() {
             className="hamburger-btn" 
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
-            <img src="/hamburger.png" alt="Menu" className="hamburger-icon" />
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0F172A" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+  <line x1="4" y1="6" x2="20" y2="6" />
+  <line x1="4" y1="12" x2="20" y2="12" />
+  <line x1="4" y1="18" x2="20" y2="18" />
+</svg>
           </button>
 
           <div className="navbar-brand">
