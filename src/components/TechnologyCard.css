@@ -1,3 +1,23 @@
+/* Dynamic Badge Color Classes */
+.tech-badge.blue {
+  background-color: #E0F2FE;
+  color: #0284C7;
+}
+
+.tech-badge.green {
+  background-color: #ECFDF5;
+  color: #059669;
+}
+
+.tech-badge.orange {
+  background-color: #FFEDD5;
+  color: #EA580C;
+}
+
+.tech-badge.red {
+  background-color: #FEE2E2;
+  color: #DC2626;
+}
 .tech-card {
   background-color: #ffffff;
   border: 1px solid #E2E8F0;
@@ -7,7 +27,8 @@
   flex-direction: column;
   justify-content: space-between;
   box-sizing: border-box;
-  min-height: 290px;
+  min-height: 280px;
+  text-align: left;
 }
 
 .tech-card-header {
@@ -28,8 +49,8 @@
   color: #16A34A;
   font-size: 11px;
   font-weight: 600;
-  padding: 3px 10px;
-  border-radius: 9999px;
+  padding: 3px 15px;
+  border-radius: 12px;
   border: 1px solid #DCFCE7;
 }
 
@@ -46,7 +67,7 @@
   line-height: 1.4;
   margin-bottom: 16px;
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -54,23 +75,31 @@
 .tech-meta {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
+  color: #475569;
   margin-bottom: 16px;
   font-size: 11px;
+  
 }
 
 .meta-pill {
   background-color: #F8FAFC;
   color: #64748B;
-  padding: 4px 8px;
+  padding: 1px 4px;
   border-radius: 6px;
   border: 1px solid #E2E8F0;
+  white-space: nowrap;
+}
+.meta-pill:first-child {
+  font-weight: 600; 
+  color: #334155;
 }
 
 .meta-rating {
   color: #F59E0B;
   font-weight: 600;
   margin-left: auto;
+  white-space: nowrap;
 }
 
 .btn-add-stack {

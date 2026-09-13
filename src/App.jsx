@@ -3,7 +3,8 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import TechnologyCard from './components/TechnologyCard';
 import Stack from './components/Stack';
-import Toast from './components/Toast'; // 1. Added Toast import
+import Toast from './components/Toast';
+import Footer from './components/Footer';
 import './App.css';
 
 function App() {
@@ -83,7 +84,7 @@ function App() {
         </div>
       </main>
 
-     
+     <Footer />
       <Toast message={toastMessage} />
     </div>
   );

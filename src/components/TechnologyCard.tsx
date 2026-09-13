@@ -1,6 +1,20 @@
 import React from 'react';
 import './TechnologyCard.css';
 
+const badgeColorMap: Record<string, string> = {
+  'Popular': 'blue',
+  'Versatile': 'green',
+  'Standard': 'green',
+  'Fast': 'orange',
+  'Top SQL': 'blue',
+  'Cache' : 'red',
+  'Ubiquitous' : 'orange',
+  'Essential': 'blue',
+  'Robust': 'blue',
+  'Modern' : 'green',
+  'Containers': 'blue'
+};
+
 export interface Technology {
   id: string | number;
   name: string;
@@ -23,7 +37,11 @@ const TechnologyCard: React.FC<TechnologyCardProps> = ({ tech, onSelect, isSelec
     <div className="tech-card">
       <div className="tech-card-header">
         <img src={tech.icon} alt={tech.name} className="tech-icon" />
-        {tech.badge && <span className="tech-badge">{tech.badge}</span>}
+        {tech.badge && (
+          <span className={`tech-badge ${badgeColorMap[tech.badge] || 'green'}`}>
+            {tech.badge}
+          </span>
+        )}
       </div>
 
       <h3 className="tech-title">{tech.name}</h3>
