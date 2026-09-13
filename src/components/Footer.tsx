@@ -1,5 +1,4 @@
 import React from 'react';
-
 import './Footer.css';
 
 const Footer: React.FC = () => {
@@ -7,10 +6,10 @@ const Footer: React.FC = () => {
     <footer className="footer-section">
       <div className="footer-container">
         <div className="footer-top">
-          {/* Brand Column with Logo File */}
+          {/* Brand Column */}
           <div className="footer-brand-col">
             <div className="footer-logo">
-              <img src= '/assets/logo-text.png' alt="Dev Stack Logo" className="footer-logo-img" />
+              <img src="/logo-text.png" alt="Dev Stack" className="brand-logo" />
             </div>
             <p className="footer-description">
               Curated tools, technologies, and resources for developers building modern software.

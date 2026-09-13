@@ -31,6 +31,10 @@
   gap: 10px;
   margin-bottom: 24px;
 }
+.footer-logo .brand-logo {
+  height: 32px;
+  object-fit: contain;
+}
 
 .logo-square {
   background: linear-gradient(135deg, #EC4899 0%, #8B5CF6 100%);
